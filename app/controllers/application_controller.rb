@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
         http.read_timeout = 2
         http.open_timeout = 2
         http.request(crystalreq)
-      }
+        }
 
       if crystalres.code == '200'
         @crystal = crystalres.body
